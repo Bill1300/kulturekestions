@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>KultureKestions - Ducumentação</title>
+</head>
+
+<body class="docs">
+  <header>
+    <img id="icon" src="./images/icon-page.png" height="32px" alt="icon" draggable="false">
+    <h1 class="title">KultureKestions<span class="docs-title">DOCS</span>
+    </h1>
+  </header>
+  <div class="container">
+    <h1>Bem-vindo ao KultureKestions!</h1>
+    <p class="justify-text">O KultureKestions é uma plataforma de quiz interativa que oferece uma experiência
+      educacional envolvente e desafiadora. Nossa missão é fornecer uma maneira divertida e eficaz de aprender sobre uma
+      variedade de tópicos.</p>
+
+    <h2>Categorias disponíveis:</h2>
+    <p>Explore uma ampla gama de categorias para desafiar seus conhecimentos:</p>
+    <ul>
+      <li>Esportes;</li>
+      <li>Geografia;</li>
+      <li>História;</li>
+      <li>Artes e Entretenimento;</li>
+      <li>Ciências e Tecnologia;</li>
+      <li>Literatura;</li>
+      <li>Cultura Pop;</li>
+      <li>Natureza e Meio Ambiente;</li>
+      <li>Política e Atualidades;</li>
+      <li>Saúde e Bem-Estar;</li>
+      <li>Economia;</li>
+      <li>Jogos eletrônicos;</li>
+      <li>Super-heróis;</li>
+    </ul>
+    <h2>Como funcionam as kestões geradas por IA?</h2>
+    <p class="justify-text">As kestões do KultureKestions são criadas por meio de algoritmos de IA que analisam e
+      sintetizam informações de diversas fontes confiáveis. Cada kestão é cuidadosamente elaborada para desafiar seus
+      conhecimentos e incentivá-lo a aprender mais sobre o mundo ao seu redor. Caso encontre algum erro em uma questão,
+      você pode <a class="link-text" href="https://forms.gle/qDdDuDgYUGfjnWnGA" target="_blank">Relatar um erro</a> para
+      que seja avaliada e corrigida conforme necessário.</p>
+
+    <h2>Funcionalidade de segurança</h2>
+    <p class="justify-text">Para garantir uma experiência justa e autêntica, implementamos uma funcionalidade de
+      segurança que impede a abertura de outras guias ou janelas do navegador enquanto você estiver respondendo ao quiz.
+      Se ocorrer a abertura de outra guia, o quiz será automaticamente cancelado para manter a integridade e a validade
+      dos resultados.</p>
+    <h2>Adicione e modifique as kestões</h2>
+    <p class="justify-text">A estrutura das questões JSON segue o seguinte formato:
+    </p>
+    <pre>
+      <code>
+{
+  "id": 42, <b>//Identificador de kestão</b>
+  "category": "Geografia", <b>//Categoria de kestão</b>
+  "question": "Qual \u00e9 o rio mais longo do mundo?", <b>//Texto de kestão</b>
+  "options": [
+    "Rio Nilo", <b>//Opção de resposta 1</b>
+    "Rio Amazonas", <b>//Opção de resposta 2</b>
+    "Rio Yangtz\u00e9", <b>//Opção de resposta 3</b>
+    "Rio Mississipi" <b>//Opção de resposta 4</b>
+  ],
+  "correct_answer": "Rio Amazonas" <b>//Resposta korreta descrita eu uma das opções</b>
+},
+      </code>
+<a target="_blank" class="link-text" href="questions/questions.json">Ver arquivo questions.json</a>
+    </pre>
+    <p class="justify-text">Para adicionar mais questões ao arquivo, você pode seguir o mesmo padrão de estrutura,
+      substituindo os valores com suas próprias perguntas, opções de resposta e respostas corretas. O ID deve ser único
+      para cada pergunta. Certifique-se de usar caracteres Unicode, para lidar com caracteres especiais, como acentos ou
+      caracteres não-ASCII.
+    </p>
+    <h2>Comece a sua jornada de aprendizado agora mesmo!</h2>
+    <p class="justify-text">Explore nossa ampla seleção de categorias e desafie seus conhecimentos com o
+      KultureKestions. Divirta-se enquanto
+      aprende e melhore suas habilidades em uma variedade de assuntos. Boa sorte e aproveite a experiência educacional!
+    </p>
+    <div class="row-button">
+      <a class="button-tag button-tag-footer" href="../index.html">Iniciar KultureKestions</a>
+      <a class="button-tag button-tag-footer github-tag" href="https://github.com/bill1300/KultureKestions">Visitar
+        repositório Github</a>
+    </div>
+  </div>
+  <p class="dev">Desenvolvido por <a class="link-text" href="https://github.com/bill1300">@Bill1300</a>.</p>
+  <p class="dev">KultureKestions © 2024 de Gabriel Cerutti está licenciado sob <a class="link-text" target="_blank"
+      href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
+</body>
+
+</html>
